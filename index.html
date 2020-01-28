@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Documentos</title>
+    <link rel="stylesheet" href="css/documentos.css">
 </head>
 
 <body>
@@ -14,10 +15,16 @@
         <button onclick="search()">Pesquisar</button>
     </div>
 
-    <div id="resultado">
+    <div id="resultado" class="ocultar">
         <h3 id="tituloDocumentos"></h3>
-        <script src="js/documentos.js"></script>
+        <button onclick="back()">Voltar</button>
     </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+    <script src="js/initFirebase.js"></script>
+    <script src="js/documentos.js"></script>
+
 
 </body>
 
